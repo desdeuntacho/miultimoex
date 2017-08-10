@@ -15,6 +15,12 @@ body header {
   margin-bottom: 0px;
 }
 
+@media (max-width: 767px) {
+  body header {
+    margin-top: 30px;
+  }
+}
+
 body main .columna h4 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -62,6 +68,18 @@ body main .texto {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 767px) {
+  body main .texto {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body main .texto {
+    padding: 30px;
+  }
+}
+
 body main .texto h3 {
   text-align: center;
   color: #666;
@@ -69,6 +87,12 @@ body main .texto h3 {
   padding-bottom: 25px;
   margin-bottom: 30px;
   border-bottom: 1px solid #999;
+}
+
+@media (max-width: 767px) {
+  body main .texto h3 {
+    margin-top: 30px;
+  }
 }
 
 body main .texto p {
@@ -88,6 +112,12 @@ body main .texto p:last-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 767px) {
+  body main .texto p:last-child {
+    padding-top: 50px;
+  }
 }
 
 body main .texto p:last-child a {
@@ -122,13 +152,19 @@ body main .portada {
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 767px) {
+  body main .portada {
+    margin-top: 30px;
+  }
+}
+
 body main .portada .sheet {
   border-left: 3px double red;
   padding: 40px 0px 20px 0px;
 }
 
 body main .portada .sheet p {
-  color: white;
+  color: black;
   border-top: 1px solid lightblue;
   line-height: 160%;
   margin: 0 0;
@@ -136,28 +172,49 @@ body main .portada .sheet p {
   text-align: left;
 }
 
+@media (max-width: 767px) and (orientation: portrait) {
+  body main .portada .sheet p {
+    padding-left: 30px;
+  }
+}
+
 body main .portada .sheet p:first-child {
   margin-top: 40px;
+}
+
+body main .portada .sheet p:first-child a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-family: 'Roboto Mono';
+  color: #000000;
+}
+
+body main .portada .sheet p:first-child a:hover {
+  color: initial;
+}
+
+body main .portada .sheet p:nth-child(2) a:hover {
+  color: initial;
 }
 
 body main .portada .sheet p:last-child {
   margin-bottom: 0px;
 }
 
-body main .portada .sheet p:nth-child(1) {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-family: times;
-  color: #000000;
+body main .portada .sheet p a {
+  font-weight: 300;
+  font-family: 'Roboto Mono';
+  font-size: 13px;
+  color: initial;
+  margin-right: 8px;
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
 }
 
-body main .portada .sheet p:nth-child(2) {
-  color: #000000;
-}
-
-body main .portada .sheet p:nth-child(4) {
-  color: #000000;
+body main .portada .sheet p a:hover {
+  text-decoration: none;
+  color: red;
 }
 
 body footer {
