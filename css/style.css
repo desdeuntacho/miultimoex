@@ -160,6 +160,7 @@ body main .texto {
   background-color: #f8751d;
   box-shadow: 5px 10px #783304;
   line-height: 180%;
+  border-radius: 10px;
   padding: 150px 10px 80px 60px;
   text-align: justify;
   letter-spacing: 0.05em;
@@ -168,6 +169,7 @@ body main .texto {
 body main .texto .frasco {
   background-color: white;
   padding: 55px;
+  border-radius: 10px;
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
