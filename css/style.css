@@ -254,6 +254,11 @@ body main .texto blockquote:last-of-type {
   margin-bottom: 20px;
 }
 
+body main .texto img {
+  width: 100%;
+  height: auto;
+}
+
 body main .portada {
   margin-top: 70px;
   background: white;
