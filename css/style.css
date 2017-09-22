@@ -49,6 +49,12 @@ body main .boton {
   border: 2px solid #747474;
   margin: auto;
   clear: both;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+body main .boton:hover {
+  background-color: #747474;
 }
 
 body main .boton a {
@@ -151,7 +157,7 @@ body main .index .titulo {
 }
 
 body main .texto {
-  background-color: #f36708;
+  background-color: #f8751d;
   box-shadow: 5px 10px #783304;
   line-height: 180%;
   padding: 150px 10px 80px 60px;
@@ -188,7 +194,7 @@ body main .texto h3 {
   margin-top: 30px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #4d4d4b;
+  border-bottom: 1px solid #f8751d;
 }
 
 @media (max-width: 767px) {
@@ -203,7 +209,7 @@ body main .texto p {
 }
 
 body main .texto p:nth-last-child(2) {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #f8751d;
   padding-bottom: 30px;
 }
 
@@ -224,11 +230,13 @@ body main .texto p:last-child {
 
 body main .texto p:last-child a {
   margin-left: 10px;
-  color: #4d4d4b;
+  color: #f36708;
+  -webkit-transition: color 100ms linear;
+  transition: color 100ms linear;
 }
 
 body main .texto p:last-child a:hover {
-  color: #f36708;
+  color: #fbb180;
   text-decoration: none;
 }
 
@@ -259,65 +267,6 @@ body main .portada {
     margin-top: 30px;
     padding-left: 60px;
   }
-}
-
-body main .portada .sheet {
-  border-left: 3px double red;
-  padding: 40px 0px 20px 0px;
-}
-
-body main .portada .sheet p {
-  color: black;
-  border-top: 1px solid lightblue;
-  line-height: 160%;
-  margin: 0 0;
-  padding-left: 60px;
-  text-align: left;
-}
-
-@media (max-width: 767px) and (orientation: portrait) {
-  body main .portada .sheet p {
-    padding-left: 30px;
-  }
-}
-
-body main .portada .sheet p:first-child {
-  margin-top: 40px;
-}
-
-body main .portada .sheet p:first-child a {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-family: 'Roboto Mono';
-  color: #000000;
-}
-
-body main .portada .sheet p:first-child a:hover {
-  color: initial;
-}
-
-body main .portada .sheet p:nth-child(2) a:hover {
-  color: initial;
-}
-
-body main .portada .sheet p:last-child {
-  margin-bottom: 0px;
-}
-
-body main .portada .sheet p a {
-  font-weight: 300;
-  font-family: 'Roboto Mono';
-  font-size: 13px;
-  color: initial;
-  margin-right: 8px;
-  -webkit-transition: color 100ms linear;
-  transition: color 100ms linear;
-}
-
-body main .portada .sheet p a:hover {
-  text-decoration: none;
-  color: red;
 }
 
 body footer {
