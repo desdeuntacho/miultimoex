@@ -42,6 +42,21 @@ body main .fondo-indice {
   margin-top: 100px;
 }
 
+body main .boton {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: 2px solid #747474;
+  margin: auto;
+  clear: both;
+}
+
+body main .boton a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
 body main .columna {
   text-align: center;
   margin-top: 50px;
@@ -76,21 +91,6 @@ body main .columna .celu-borde .screen {
   height: 260px;
   margin-bottom: 20px;
   background-color: #363636;
-}
-
-body main .columna .celu-borde .boton {
-  height: 45px;
-  width: 45px;
-  border-radius: 50px;
-  border: 2px solid #747474;
-  margin: auto;
-  clear: both;
-}
-
-body main .columna .celu-borde .boton a {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
 }
 
 body main .columna .titulo h4 {
