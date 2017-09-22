@@ -7,7 +7,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   font-family: 'Roboto Slab';
-  background: #bce9ee;
+  background: url(fondo.png);
 }
 
 body header {
@@ -21,12 +21,89 @@ body header {
   }
 }
 
-body main .columna h4 {
+body main .back {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+body main .cover {
+  margin: auto;
+  margin-top: 60px;
+  width: 774px;
+  height: 538px;
+  background: url(portada.svg) no-repeat;
+  overflow: hidden;
+}
+
+body main .fondo-indice {
+  margin-top: 100px;
+}
+
+body main .columna {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body main .columna {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  body main .columna {
+    padding-left: 45px;
+  }
+}
+
+body main .columna .celu-borde {
+  width: 280px;
+  padding: 10px;
+  padding-bottom: 40px;
+  height: 360px;
+  border-radius: 30px;
+  background-color: #444444;
+  margin-right: 10px;
+  box-shadow: 10px 10px #2d2d2d;
+}
+
+body main .columna .celu-borde .screen {
+  border-radius: 30px;
+  height: 260px;
+  margin-bottom: 20px;
+  background-color: #363636;
+}
+
+body main .columna .celu-borde .boton {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: 2px solid #747474;
+  margin: auto;
+  clear: both;
+}
+
+body main .columna .celu-borde .boton a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+body main .columna .titulo h4 {
+  margin-top: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-weight: 400;
   font-family: times;
+}
+
+body main .columna .titulo p {
+  margin-bottom: 15px;
 }
 
 body main .columna p {
@@ -34,7 +111,7 @@ body main .columna p {
 }
 
 body main .columna a {
-  color: initial;
+  color: white;
   margin-right: 8px;
   -webkit-transition: color 100ms linear;
   transition: color 100ms linear;
@@ -42,30 +119,55 @@ body main .columna a {
 
 body main .columna a:hover {
   text-decoration: none;
-  color: #f4f4e9;
+  color: #747474;
+}
+
+body main .columna .indice {
+  font-family: "Roboto Mono";
+  font-weight: 300;
 }
 
 body main .columna .indice p:first-child {
   margin-top: 5px;
 }
 
-body main .columna .indice p:first-child a:first-child {
-  margin-left: 20px;
+body main .columna .indice p:first-child a:nth-child(1) {
+  margin-left: 0px;
+  margin-right: 16px;
+  font-family: 'Roboto Slab';
 }
 
-body main .columna .indice a:first-child {
-  margin-right: 8px;
-  margin-left: 58px;
+body main .index .celu-borde {
+  height: 400px;
+  box-shadow: 10px 10px #2d2d2d;
+}
+
+body main .index .celu-borde .screen {
+  height: 300px;
+}
+
+body main .index .titulo {
+  margin-bottom: 20px;
 }
 
 body main .texto {
-  margin-top: 70px;
+  background-color: #f36708;
+  box-shadow: 5px 10px #783304;
   line-height: 180%;
-  background: #f4f4e9;
-  padding: 40px 60px;
-  border-radius: 10px;
+  padding: 150px 10px 80px 60px;
   text-align: justify;
   letter-spacing: 0.05em;
+}
+
+body main .texto .frasco {
+  background-color: white;
+  padding: 55px;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  body main .texto .frasco {
+    padding: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -76,17 +178,17 @@ body main .texto {
 
 @media (max-width: 767px) and (orientation: portrait) {
   body main .texto {
-    padding: 30px;
+    padding: 100px 10px 80px 20px;
   }
 }
 
 body main .texto h3 {
   text-align: center;
-  color: #666;
-  margin-top: 50px;
+  color: #4d4d4b;
+  margin-top: 30px;
   padding-bottom: 25px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #4d4d4b;
 }
 
 @media (max-width: 767px) {
@@ -122,11 +224,11 @@ body main .texto p:last-child {
 
 body main .texto p:last-child a {
   margin-left: 10px;
-  color: inherit;
+  color: #4d4d4b;
 }
 
 body main .texto p:last-child a:hover {
-  color: #A0E6C2;
+  color: #f36708;
   text-decoration: none;
 }
 
@@ -145,7 +247,7 @@ body main .texto blockquote:last-of-type {
 body main .portada {
   margin-top: 70px;
   background: white;
-  padding-left: 60px;
+  padding-left: 80px;
   padding-right: 0px;
   border-radius: 10px;
   text-align: justify;
@@ -155,6 +257,7 @@ body main .portada {
 @media (max-width: 767px) {
   body main .portada {
     margin-top: 30px;
+    padding-left: 60px;
   }
 }
 
